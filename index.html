@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealify</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav class="navbar">
+            <a href="/" class="navbar-brand"><h2>Mealify</h2><span class="red-dot">.</span></a>
+            <div class="nav-links">
+                <ul>
+                    <li class="navbar-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#">Recipes</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#">Chefs</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="toggle-container">
+                <input type="checkbox" id="mode-toggle" hidden />
+                <label for="mode-toggle" class="toggle-label">
+                    <i class="fas fa-sun" id="sun-icon"></i>
+                    <i class="fas fa-moon" id="moon-icon"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Discover <span class="highlight">Delicious</span> Recipes</h1>
+                <p>Explore our collection of dishes :)</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for recipes...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipe-section">
+            <div class="container">
+                <h2 class="section-title">Popular Recipes</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/images05.jpg" alt="Pizza Margherita">
+                            <div class="time-tag"><i class="far fa-clock"></i> 30 min</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Pizza Margherita</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-fire"></i> 320 cal</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <p>Classic Italian pizza with tomatoes, mozzarella, and basil.</p>
+                            <div class="recipe-tags">
+                                <span>Italian</span>
+                                <span>Vegetarian</span>
+                            </div>
+                            <button class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/images07.jpg" alt="Grilled Steak">
+                            <div class="time-tag"><i class="far fa-clock"></i> 45 min</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Grilled Ribeye Steak</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-fire"></i> 450 cal</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <p>Perfectly grilled ribeye steak with herb butter.</p>
+                            <div class="recipe-tags">
+                                <span>American</span>
+                                <span>Beef</span>
+                            </div>
+                            <button class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/images09.jpg" alt="Gourmet Burger">
+                            <div class="time-tag"><i class="far fa-clock"></i> 25 min</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Gourmet Cheeseburger</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-fire"></i> 520 cal</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <p>Juicy beef patty with melted cheese and special sauce.</p>
+                            <div class="recipe-tags">
+                                <span>American</span>
+                                <span>Fast Food</span>
+                            </div>
+                            <button class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/images10.jpg" alt="Roast Chicken">
+                            <div class="time-tag"><i class="far fa-clock"></i> 90 min</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Herb Roasted Chicken</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-fire"></i> 380 cal</span>
+                                <span><i class="fas fa-star"></i> 4.6</span>
+                            </div>
+                            <p>Whole chicken roasted with herbs, garlic, and lemon.</p>
+                            <div class="recipe-tags">
+                                <span>French</span>
+                                <span>Poultry</span>
+                            </div>
+                            <button class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card featured-recipe">
+                        <div class="recipe-image">
+                            <img src="images/images08.jpg" alt="Gourmet Pizza">
+                            <div class="time-tag"><i class="far fa-clock"></i> 35 min</div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="featured-badge">Featured</div>
+                            <h3>Gourmet Truffle Pizza</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-fire"></i> 410 cal</span>
+                                <span><i class="fas fa-star"></i> 5.0</span>
+                            </div>
+                            <p>Artisanal pizza with truffle oil, wild mushrooms, and prosciutto.</p>
+                            <div class="recipe-tags">
+                                <span>Gourmet</span>
+                                <span>Italian</span>
+                            </div>
+                            <button class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/images11.jpg" alt="Kofta">
+                            <div class="time-tag"><i class="far fa-clock"></i> 40 min</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Spiced Lamb Kofta</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-fire"></i> 340 cal</span>
+                                <span><i class="fas fa-star"></i> 4.5</span>
+                            </div>
+                            <p>Middle Eastern lamb kofta with aromatic spices and herbs.</p>
+                            <div class="recipe-tags">
+                                <span>Middle Eastern</span>
+                                <span>Lamb</span>
+                            </div>
+                            <button class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Get Weekly Recipe Updates</h2>
+                    <p>Subscribe to our newsletter and never miss a delicious recipe!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Mealify</h2><span class="red-dot">.</span>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Chefs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mealify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
